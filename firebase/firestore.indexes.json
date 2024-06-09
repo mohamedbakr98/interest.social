@@ -1,0 +1,18 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "cards",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "IsShared",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "creation_time",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ]
+}
