@@ -86,7 +86,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                           ),
                           alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Text(
-                            'interest.social',
+                            'interest.social2',
                             style: FlutterFlowTheme.of(context)
                                 .displaySmall
                                 .override(
