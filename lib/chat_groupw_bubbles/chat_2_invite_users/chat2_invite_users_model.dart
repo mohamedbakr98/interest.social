@@ -23,7 +23,6 @@ class Chat2InviteUsersModel extends FlutterFlowModel<Chat2InviteUsersWidget> {
 
   final unfocusNode = FocusNode();
   // State field(s) for CheckboxListTile widget.
-
   Map<DocumentReference, bool> checkboxListTileValueMap = {};
   List<DocumentReference> get checkboxListTileCheckedItems =>
       checkboxListTileValueMap.entries

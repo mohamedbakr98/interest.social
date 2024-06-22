@@ -163,73 +163,52 @@ class _FindYourThingWidgetState extends State<FindYourThingWidget> {
                                   child: Padding(
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 2.0),
-                                    child: InkWell(
-                                      splashColor: Colors.transparent,
-                                      focusColor: Colors.transparent,
-                                      hoverColor: Colors.transparent,
-                                      highlightColor: Colors.transparent,
-                                      onTap: () async {
-                                        if (_model.camelCase[listViewIndex]) {
-                                          _model.updateCamelCaseAtIndex(
-                                            listViewIndex,
-                                            (_) => false,
-                                          );
-                                          setState(() {});
-                                        } else {
-                                          _model.updateCamelCaseAtIndex(
-                                            listViewIndex,
-                                            (_) => true,
-                                          );
-                                          setState(() {});
-                                        }
-                                      },
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        children: [
-                                          Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    16.0, 8.0, 0.0, 8.0),
-                                            child: Container(
-                                              width: 4.0,
-                                              height: 50.0,
-                                              decoration: BoxDecoration(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                borderRadius:
-                                                    BorderRadius.circular(4.0),
-                                              ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  16.0, 8.0, 0.0, 8.0),
+                                          child: Container(
+                                            width: 4.0,
+                                            height: 50.0,
+                                            decoration: BoxDecoration(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primary,
+                                              borderRadius:
+                                                  BorderRadius.circular(4.0),
                                             ),
                                           ),
-                                          Expanded(
-                                            child: Padding(
-                                              padding: const EdgeInsets.all(10.0),
-                                              child: Column(
-                                                mainAxisSize: MainAxisSize.max,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                children: [
-                                                  Text(
-                                                    listViewGenresRecord.gname,
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyLarge
-                                                        .override(
-                                                          fontFamily:
-                                                              'Readex Pro',
-                                                          fontSize: 25.0,
-                                                          letterSpacing: 0.0,
-                                                        ),
-                                                  ),
-                                                ],
-                                              ),
+                                        ),
+                                        Expanded(
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(10.0),
+                                            child: Column(
+                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  listViewGenresRecord.gname,
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyLarge
+                                                      .override(
+                                                        fontFamily:
+                                                            'Readex Pro',
+                                                        fontSize: 25.0,
+                                                        letterSpacing: 0.0,
+                                                      ),
+                                                ),
+                                              ],
                                             ),
                                           ),
-                                        ],
-                                      ),
+                                        ),
+                                      ],
                                     ),
                                   ),
                                 ),

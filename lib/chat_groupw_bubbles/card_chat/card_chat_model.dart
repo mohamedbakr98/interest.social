@@ -23,8 +23,6 @@ class CardChatModel extends FlutterFlowModel<CardChatWidget> {
 
   final unfocusNode = FocusNode();
   final formKey = GlobalKey<FormState>();
-  // Stores action output result for [Backend Call - Read Document] action in card_chat widget.
-  CardsRecord? card;
   // State field(s) for Column widget.
   ScrollController? columnController;
   List<CardMessagesRecord>? columnPreviousSnapshot;

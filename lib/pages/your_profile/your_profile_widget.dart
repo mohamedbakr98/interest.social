@@ -7,6 +7,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/upload_data.dart';
 import 'dart:ui';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'your_profile_model.dart';
 export 'your_profile_model.dart';
@@ -129,8 +130,12 @@ class _YourProfileWidgetState extends State<YourProfileWidget> {
                                           decoration: const BoxDecoration(
                                             shape: BoxShape.circle,
                                           ),
-                                          child: Image.network(
-                                            currentUserPhoto,
+                                          child: CachedNetworkImage(
+                                            fadeInDuration:
+                                                const Duration(milliseconds: 500),
+                                            fadeOutDuration:
+                                                const Duration(milliseconds: 500),
+                                            imageUrl: currentUserPhoto,
                                             fit: BoxFit.cover,
                                           ),
                                         ),

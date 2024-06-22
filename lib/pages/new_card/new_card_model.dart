@@ -22,7 +22,7 @@ class NewCardModel extends FlutterFlowModel<NewCardWidget> {
   set choiceChipsValue1(String? val) =>
       choiceChipsValueController1?.value = val != null ? [val] : [];
   // State field(s) for PlacePicker widget.
-  var placePickerValue = const FFPlace();
+  FFPlace placePickerValue = const FFPlace();
   // State field(s) for ChoiceChips widget.
   FormFieldController<List<String>>? choiceChipsValueController2;
   String? get choiceChipsValue2 =>

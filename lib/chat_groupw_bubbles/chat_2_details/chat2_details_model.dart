@@ -23,10 +23,6 @@ class Chat2DetailsModel extends FlutterFlowModel<Chat2DetailsWidget> {
 
   final unfocusNode = FocusNode();
   final formKey = GlobalKey<FormState>();
-  // Stores action output result for [Backend Call - Read Document] action in chat_2_Details widget.
-  ChatsRecord? chat;
-  // Stores action output result for [Backend Call - Read Document] action in chat_2_Details widget.
-  UsersRecord? user;
   // State field(s) for Column widget.
   ScrollController? columnController;
   List<ChatMessagesRecord>? columnPreviousSnapshot;
